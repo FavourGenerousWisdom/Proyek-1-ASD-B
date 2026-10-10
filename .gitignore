@@ -1,0 +1,43 @@
+# Compiled Java
+*.class
+*.jar
+*.war
+*.ear
+
+# Package Files
+*.zip
+*.tar.gz
+
+# Virtual Machine crash logs
+hs_err_pid*
+replay_pid*
+
+# IDE for JetBrains (IntelliJ, etc)
+.idea/
+*.iml
+*.iws
+*.ipr
+out/
+
+# IDE for VS Code / VSCodium
+.vscode/
+*.code-workspace
+
+# OS files
+.DS_Store
+.DS_Store?
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Build / Output
+bin/
+build/
+target/
+out/
+
+# Temporary files
+*.tmp
+*.bak
+*.swp
+*~
