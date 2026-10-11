@@ -123,7 +123,11 @@ public class DoublyLinkedList implements LinkedList{
     @Override
     public Object get(int index) {
         // TODO digunakan untuk mengembalikan data pada index ke-i dimulai dari head. Head memiliki index 0
-        return null;
+        Node2P current = head;
+        for (int i = 0; i < index;i++) {
+            current = current.next;
+        }
+        return current;
     }
     @Override
     public int indexOf(Object targetData) {
