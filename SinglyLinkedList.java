@@ -124,7 +124,7 @@ public class SinglyLinkedList implements LinkedList{
         // TODO digunakan mencari kemunculan pertama targetData pada linked list dan mengembalikan indeksnya. Indeks dari head adalah 0. Jika tidak ada targetData pada linked list, kembalikan nilai -1 
         Node current = head;
         for (int i = 0; i < size ;i++) {
-            if (current.data == targetData) {
+            if (current.data.equals(targetData)) {
                 return i;
             }
             current = current.pointer;
