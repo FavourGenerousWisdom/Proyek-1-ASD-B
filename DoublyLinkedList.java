@@ -127,7 +127,7 @@ public class DoublyLinkedList implements LinkedList{
         for (int i = 0; i < index;i++) {
             current = current.next;
         }
-        return current;
+        return current.data;
     }
     @Override
     public int indexOf(Object targetData) {
