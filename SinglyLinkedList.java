@@ -138,7 +138,7 @@ public class SinglyLinkedList implements LinkedList{
         int printLeft = size - 1;
         Node current = head;
         do {
-            while (current != get(printLeft)) { // belum di uji, anggota lain harusnya yang ngurus nanti. Pengujian saat anggota lain yang udah ngurus bagian method get()
+            while (current != getNode(printLeft)) { 
                 current = current.pointer;
             }
             System.out.println(current.data);
@@ -156,4 +156,17 @@ public class SinglyLinkedList implements LinkedList{
         // TODO digunakan untuk mendapatkan keseluruhan data pada node-node di linked list dalam bentuk array. Data-data pada array disusun secara urut mulai dari head sampai dengan tail.
         return null;
     }
+
+    /**
+     * Method tambahan untuk mempermudah pencarian, dimana mengembalikan node (bukan data)
+     * @param index memasukan posisi index apa yang mau dicari
+     */
+    public Object getNode(int index) {
+        Node current = head;
+        for (int i = 0; i < index;i++) {
+            current = current.pointer;
+        }
+        return current;
+    }
+
 }
